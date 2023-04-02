@@ -1,5 +1,5 @@
 {
-  "name": "my-artis",
+  "name": "G-Sneaker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,22 +8,15 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.1.6",
     "gh-pages": "^5.0.0",
-    "leaflet": "^1.9.3",
-    "leaflet-draw": "^1.0.4",
-    "leaflet.markercluster": "^1.5.3",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
-    "react-scroll": "^1.8.9",
     "react-spring": "^9.6.1",
-    "react-three-fiber": "^6.0.13",
-    "recharts": "^2.5.0",
     "scroll": "^3.0.1",
     "styled-components": "^5.3.6",
-    "three": "^0.151.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
