@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@layer base {
+  html {
+    font-size: 10px;
+  }
+
+  body {
+    @apply font-rubik;
+  }
+
+  h1 {
+    @apply text-5xl font-bold;
+  }
+
+  h3 {
+    @apply text-3xl;
+  }
+
+  h4 {
+    @apply text-2xl;
+  }
+  ul,
+  li {
+    list-style: none;
+  }
+
+  container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+@layer components {
+  .btn {
+    @apply border-2 border-primary px-4 py-2 rounded uppercase text-xl font-semibold cursor-pointer hover:bg-primary hover:text-white;
+  }
+
+  .card {
+    @apply bg-slate-700 rounded-md shadow-md shadow-primary relative overflow-hidden hover:shadow-lg hover:shadow-primary;
+  }
+
+  .flex-center {
+    @apply flex justify-between items-center;
+  }
+  .heroTitle {
+    @apply font-bold text-[60px] max-[770px]:text-[40px] dark:text-lightBlue_1 mb-4 max-w-[400px];
+    line-height: calc(76 / 60);
+  }
+  .cart:hover {
+    background-color: #f6e05e;
+    filter: brightness(110%);
+  }
+  .cart {
+    transition-duration: 500ms;
+  }
+  .cart:hover .absolute {
+    opacity: 1;
+  }
+  .service__button {
+    /* @apply bg-gradient-to-r from-yellow-400 to-red-500; */
+    background: linear-gradient(180deg, #ffcc21 0%, #ff963c 100%);
+  }
+  .shadowCart {
+    background: #ffffff;
+    //z-index: 0;
+    box-shadow: 0 3.2px 2.2px rgba(0, 0, 0, 0.02),
+      0 7px 5.4px rgba(0, 0, 0, 0.028), 0 12.1px 10.1px rgba(0, 0, 0, 0.035),
+      0 19.8px 18.1px rgba(0, 0, 0, 0.042), 0 34.7px 33.8px rgba(0, 0, 0, 0.05),
+      0 81px 81px rgba(0, 0, 0, 0.07);
+    border-radius: 30px;
+  }
+}
